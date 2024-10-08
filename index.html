@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MP4 to MP3 Converter</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+        }
+        .input-field {
+            margin-bottom: 20px;
+        }
+        .input-field input[type="file"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .input-field button[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .input-field button[type="submit"]:hover {
+            background-color: #444;
+        }
+        .output {
+            margin-top: 20px;
+        }
+        .output a {
+            text-decoration: none;
+            color: #337ab7;
+        }
+        .output a:hover {
+            color: #23527c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MP4 to MP3 Converter</h1>
+        </div>
+        <form id="convert-form">
+            <div class="input-field">
+                <input type="file" id="mp4-file" accept=".mp4">
+                <button type="submit">Convert to MP3</button>
+            </div>
+        </form>
+        <div class="output">
+            <p id="output-message">Please select an MP4 file to convert.</p>
+            <a id="download-link" href="#" download="output.mp3">Download MP3</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
